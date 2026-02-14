@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loop Example</title>
+</head>
+<body>
+
+    <h2>Array Loop Example</h2>
+
+    <button id="btn">Show Scores</button>
+
+    <p id="output"></p>
+
+    <script>
+
+        // Step 1: Create array
+        let scores = [75, 60, 90, 45];
+
+        // click event
+        document.getElementById("btn").addEventListener("click", function() {
+
+            let result = "";
+
+            // Step 2: for loop
+            for (let i = 0; i < scores.length; i++) {
+                console.log(scores[i]);   // print in console
+                result += scores[i] + " "; // store values
+            }
+
+            // Show in webpage
+            document.getElementById("output").innerText = result;
+
+        });
+
+    </script>
+
+</body>
+</html>

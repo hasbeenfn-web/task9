@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array DOM Example</title>
+</head>
+<body>
+
+    <h2>Array Example</h2>
+
+    <button id="btn">Show Details</button>
+
+    <p id="output"></p>
+
+    <script>
+
+        // Step 1: Create array
+        let scores = [75, 60, 90, 45];
+
+        // click event
+        document.getElementById("btn").addEventListener("click", function() {
+
+            // Step 2: First index
+            let firstValue = scores[0];
+
+            // Step 3: Length
+            let lengthValue = scores.length;
+
+            // Print in console
+            console.log("First Value:", firstValue);
+            console.log("Array Length:", lengthValue);
+
+            // Show in webpage also
+            document.getElementById("output").innerText =
+                "First Value: " + firstValue + 
+                " Array Length: " + lengthValue;
+
+        });
+
+    </script>
+
+</body>
+</html>

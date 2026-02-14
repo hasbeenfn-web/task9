@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>If Else DOM Example</title>
+</head>
+<body>
+
+    <h2>Student Result Checker</h2>
+
+    <input type="text" id="name" placeholder="Enter Student Name">
+    <input type="number" id="score" placeholder="Enter Score">
+    <br><br>
+
+    <button id="checkBtn">Check Result</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        document.getElementById("checkBtn").addEventListener("click", function() {
+
+            // Step 1: Declare variables
+            let studName = document.getElementById("name").value;
+            let score = parseInt(document.getElementById("score").value);
+
+            // Step 2 & 3: If / Else
+            if (score >= 50) {
+                document.getElementById("result").innerText = studName + " - Passed";
+            } else {
+                document.getElementById("result").innerText = studName + " - Failed";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

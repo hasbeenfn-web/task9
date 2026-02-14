@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Example</title>
+</head>
+<body>
+
+    <h2>Object </h2>
+
+    <button id="btn">Show Student Details</button>
+
+    <script>
+
+        // Step 1: Create object
+        let student = {
+            name: "Farhana",
+            age: 20,
+            grade: "A"
+        };
+
+        // click event
+        document.getElementById("btn").addEventListener("click", function() {
+
+            // Step 2: Print name and age
+            console.log("Name:", student.name);
+            console.log("Age:", student.age);
+
+        });
+
+    </script>
+
+</body>
+</html>

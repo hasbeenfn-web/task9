@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Events Example</title>
+</head>
+<body>
+
+    <h2>Student Details</h2>
+
+    <!-- Input Fields -->
+    <input type="text" id="name" placeholder="Enter Student Name">
+    <input type="number" id="score" placeholder="Enter Score">
+
+    <br><br>
+
+    <!-- Button (click event) -->
+    <button id="btn">Submit</button>
+
+    <script>
+        // input event
+        document.getElementById("name").addEventListener("input", function() {
+            console.log("Typing Name:", this.value);
+        });
+
+        // click event
+        document.getElementById("btn").addEventListener("click", function() {
+
+            let studName = document.getElementById("name").value;
+            let score = document.getElementById("score").value;
+
+            console.log("Student Name:", studName);
+            console.log("Score:", score);
+        });
+
+        // submit event
+        document.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page reload
+            console.log("Form Submitted");
+        });
+
+    </script>
+
+</body>
+</html>
